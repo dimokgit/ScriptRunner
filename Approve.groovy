@@ -12,9 +12,17 @@ import com.atlassian.jira.user.ApplicationUser
 
 IssueManager issueManager = ComponentAccessor.getIssueManager();
 CustomFieldManager customFieldManager = ComponentAccessor.getCustomFieldManager();
-CustomField multiUser = ComponentAccessor.getCustomFieldManager().getCustomFieldObjectByName("Approvers")
+CustomField multiUser = ComponentAccessor.getCustomFieldManager().getCustomFieldObjectByName("Approver(s)")
 List<ApplicationUser> users = (List<ApplicationUser>) issue.getCustomFieldValue(multiUser)
 
 def currentUser = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser()
 users?.remove(currentUser)
 issue.setCustomFieldValue(multiUser, users);
+
+multiUser = ComponentAccessor.getCustomFieldManager().getCustomFieldObjectByName("Approved By")
+users = (List<ApplicationUser>) issue.getCustomFieldValue(multiUser)
+if(users == null)
+    users = new ArrayList<>();
+users.add(currentUser)
+issue.setCustomFieldValue(multiUser, users);
+
