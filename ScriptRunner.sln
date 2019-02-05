@@ -11,13 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Elements.groovy = Elements.groovy
 		FieldContext.groovy = FieldContext.groovy
 		FieldDelete.groovy = FieldDelete.groovy
+		Map.groovy = Map.groovy
 		ScriptedJQL.groovy = ScriptedJQL.groovy
 		Snippets.groovy = Snippets.groovy
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Fields", "Custom Fields", "{C2C3E2A9-97B3-4202-83CC-C151A008A330}"
+	ProjectSection(SolutionItems) = preProject
+		ActionPlanDate.groovy = ActionPlanDate.groovy
+		InherentRisk.groovy = InherentRisk.groovy
+		ResidualRisk.groovy = ResidualRisk.groovy
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2C3E2A9-97B3-4202-83CC-C151A008A330} = {5EDC9AB7-EEFD-438F-A189-4B47394BC7FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC544407-F3DC-4234-B0C6-12E6A026113F}

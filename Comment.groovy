@@ -13,6 +13,8 @@ import org.apache.log4j.Category
 import com.atlassian.jira.issue.CustomFieldManager
 import com.atlassian.jira.issue.fields.CustomField
 
+// needs testing
+//def user = ComponentAccessor.jiraAuthenticationContext.loggedInUser
 def currentUser = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser()
 def compManager = ComponentManager.getInstance()
 
