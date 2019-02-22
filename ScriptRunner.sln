@@ -8,11 +8,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Approve.groovy = Approve.groovy
 		Comment.groovy = Comment.groovy
 		DeleteUnusedWorkflows.groovy = DeleteUnusedWorkflows.groovy
+		DueDatetoApprovePlan.groovy = DueDatetoApprovePlan.groovy
 		Elements.groovy = Elements.groovy
 		FieldContext.groovy = FieldContext.groovy
 		FieldDelete.groovy = FieldDelete.groovy
+		GetProjectIssueTypes.groovy = GetProjectIssueTypes.groovy
 		Map.groovy = Map.groovy
 		ScriptedJQL.groovy = ScriptedJQL.groovy
+		SetAssignee.groovy = SetAssignee.groovy
+		SetIssueType.groovy = SetIssueType.groovy
 		Snippets.groovy = Snippets.groovy
 	EndProjectSection
 EndProject
